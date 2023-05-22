@@ -4,6 +4,8 @@ Chiedere all’utente di inserire una parola
 Creare una funzione per capire se la parola inserita è palindroma
 */
 
+const parola = prompt ('Inserisci una parola')
+console.log (parola)
 
 /*
 Pari e Dispari
@@ -15,7 +17,6 @@ Dichiariamo chi ha vinto.
 
 
 // creo i vari prompt per far scegliere all'utente le varie opzioni
-
 
 const userChoice = prompt('Scegli pari o dispari');
 console.log(userChoice);
@@ -29,7 +30,6 @@ console.log(casualNumber);
 
 //scrivo in console se il numero scelto dall'utente è pari o dispari
 
-
 if (userNumber % 2 === 0) {
     console.log ('Il numero che hai scelto è pari')
 } else {
@@ -37,6 +37,7 @@ if (userNumber % 2 === 0) {
 }
 
 //creo la funzione che darà come risultato il vincitore del gioco
+
     //creo la funzione
     function vincitore (userChoice, userNumber, casualNumber){
         
@@ -56,7 +57,7 @@ if (userNumber % 2 === 0) {
         }
     }
 
-
 //stampo il risultato in console
+
 const risultato = vincitore(userChoice, userNumber, casualNumber);
 console.log(risultato);
