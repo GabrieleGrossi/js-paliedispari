@@ -13,14 +13,14 @@ function reverse(parola) {
   
     return parolaInvertita;
 }
-function isPalindroma(parola) {
+function palindroma(parola) {
     const parolaInvertita = reverse(parola);
     return parola === parolaInvertita;
 }
   
 const parola = prompt("Inserisci una parola:");
   
-if (isPalindroma(parola)) {
+if (palindroma(parola)) {
     console.log(parola + " è una parola palindroma.");
 } else {
     console.log(parola + " non è una parola palindroma.");
