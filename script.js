@@ -4,9 +4,27 @@ Chiedere all’utente di inserire una parola
 Creare una funzione per capire se la parola inserita è palindroma
 */
 
-const parola = prompt ('Inserisci una parola')
-console.log (parola)
-
+function reverse(parola) {
+    let parolaInvertita = '';
+  
+    for (let i = parola.length - 1; i >= 0; i--) {
+      parolaInvertita += parola[i];
+    }
+  
+    return parolaInvertita;
+}
+function isPalindroma(parola) {
+    const parolaInvertita = reverse(parola);
+    return parola === parolaInvertita;
+}
+  
+const parola = prompt("Inserisci una parola:");
+  
+if (isPalindroma(parola)) {
+    console.log(parola + " è una parola palindroma.");
+} else {
+    console.log(parola + " non è una parola palindroma.");
+}
 /*
 Pari e Dispari
 L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
