@@ -3,6 +3,11 @@ Palindroma
 Chiedere all’utente di inserire una parola
 Creare una funzione per capire se la parola inserita è palindroma
 */
+//creo un prompt per chiedere una parola
+
+const parola = prompt("Inserisci una parola:");
+
+//creo una funzione per invertire la parola data
 
 function reverse(parola) {
     let parolaInvertita = '';
@@ -13,13 +18,16 @@ function reverse(parola) {
   
     return parolaInvertita;
 }
+
+//creo una funzione per capire se la parola data è palindroma o no
+
 function palindroma(parola) {
     const parolaInvertita = reverse(parola);
     return parola === parolaInvertita;
 }
-  
-const parola = prompt("Inserisci una parola:");
-  
+
+//creo un "if" per stampare la parola in console
+
 if (palindroma(parola)) {
     console.log(parola + " è una parola palindroma.");
 } else {
