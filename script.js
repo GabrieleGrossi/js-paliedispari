@@ -62,6 +62,7 @@ if (userChoice!== "pari" && userChoice !== "dispari") {
 if (userNumber < 1 || userNumber > 5) {
     console.log("Numero non valido. Devi inserire un numero da 1 a 5.");
 } 
+
 //scrivo in console se il numero scelto dall'utente è pari o dispari
 
 if (userNumber % 2 === 0) {
