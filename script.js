@@ -13,6 +13,10 @@ Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (u
 Dichiariamo chi ha vinto.
 */
 
+
+// creo i vari prompt per far scegliere all'utente le varie opzioni
+
+
 const userChoice = prompt('Scegli pari o dispari');
 console.log(userChoice);
 
@@ -22,21 +26,37 @@ console.log(userNumber);
 const casualNumber = (Math.floor(Math.random() * 5) + 1);
 console.log(casualNumber);
 
+
+//scrivo in console se il numero scelto dall'utente è pari o dispari
+
+
 if (userNumber % 2 === 0) {
     console.log ('Il numero che hai scelto è pari')
 } else {
     console.log ('Il numero che hai scelto è dispari')
 }
 
-function vincitore (userChoice, userNumber, casualNumber){
-    const sum = userNumber + casualNumber;
+//creo la funzione che darà come risultato il vincitore del gioco
+    //creo la funzione
+    function vincitore (userChoice, userNumber, casualNumber){
+        
+        //faccio la somma fra il numero dell'utento e il numero generato randomicamente
+        const sum = userNumber + casualNumber;
+        console.log(sum);
 
-    if ((sum % 2 === 0 && userChoice === 'pari')||(sum % 2 !=0 && userChoice === 'dispari')) {
-        return 'Hai vinto!';
-    } else {
-        return 'Hai perso';
+
+        //creo un "if" 
+        //dico se ha scelto pari e la somma è pari --> allora HA VINTO
+        if ((sum % 2 === 0 && userChoice === 'pari')||(sum % 2 !=0 && userChoice === 'dispari')) {
+            return 'Hai vinto!';
+        } 
+        //altrimenti --> HA PERSO
+        else {
+            return 'Hai perso';
+        }
     }
-}
 
+
+//stampo il risultato in console
 const risultato = vincitore(userChoice, userNumber, casualNumber);
 console.log(risultato);
