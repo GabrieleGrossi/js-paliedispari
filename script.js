@@ -54,6 +54,14 @@ const casualNumber = (Math.floor(Math.random() * 5) + 1);
 console.log(casualNumber);
 
 
+//faccio apparire in cosnole un messaggio se l'utente non ha inserito i dati giusti nel prompt
+
+if (userChoice!== "pari" && userChoice !== "dispari") {
+    console.log("Scelta non valida. Devi scegliere tra pari e dispari.");
+} 
+if (userNumber < 1 || userNumber > 5) {
+    console.log("Numero non valido. Devi inserire un numero da 1 a 5.");
+} 
 //scrivo in console se il numero scelto dall'utente è pari o dispari
 
 if (userNumber % 2 === 0) {
