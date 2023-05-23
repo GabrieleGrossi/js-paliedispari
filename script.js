@@ -66,9 +66,9 @@ if (userNumber < 1 || userNumber > 5) {
 //scrivo in console se il numero scelto dall'utente è pari o dispari
 
 if (userNumber % 2 === 0) {
-    console.log ('Il numero che hai scelto è pari')
+    console.log (userNumber + ' è pari')
 } else {
-    console.log ('Il numero che hai scelto è dispari')
+    console.log (userNumber + ' è dispari')
 }
 
 //creo la funzione che darà come risultato il vincitore del gioco
@@ -78,7 +78,7 @@ if (userNumber % 2 === 0) {
         
         //faccio la somma fra il numero dell'utento e il numero generato randomicamente
         const sum = userNumber + casualNumber;
-        console.log(sum);
+        console.log('La somma dei due numeri è ' + sum);
 
 
         //creo un "if" 
