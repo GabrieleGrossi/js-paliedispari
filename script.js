@@ -45,13 +45,13 @@ Dichiariamo chi ha vinto.
 // creo i vari prompt per far scegliere all'utente le varie opzioni
 
 const userChoice = prompt('Scegli pari o dispari');
-console.log(userChoice);
+console.log('Hai scelto ' + userChoice);
 
 const userNumber = parseInt(prompt('Scegli un numero fra 1 e 5'));
-console.log(userNumber);
+console.log('Il numero da te scelto fra 1 e 5 è ' + userNumber);
 
 const casualNumber = (Math.floor(Math.random() * 5) + 1);
-console.log(casualNumber);
+console.log('Il numero generato casualmente dall AI è ' + casualNumber);
 
 
 //faccio apparire in cosnole un messaggio se l'utente non ha inserito i dati giusti nel prompt
